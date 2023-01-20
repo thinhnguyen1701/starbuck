@@ -1,0 +1,67 @@
+:root{
+    --colorFont: rgb(30,57,50);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+}
+
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+
+/* typography */
+body{
+    font-family: 'Sofia Sans', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: var(--colorFont);
+}
+
+h2{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+a{
+    color: var(--colorFont);
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/* button */
+.btn{
+    border: 1px solid var(--colorFont);
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+/* messageGroup */
+.messageGroup{
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    width: 100%;
+}
+
+.heading{
+    font-size: 1.9rem;
+}
+
+.message{
+    margin: 35px 0;
+}
+
+/* frame1 */
+.frame-one{
+    background-color: #f4c5a1;
+}
+
+.frame__img{
+    width: 100%;
+}
