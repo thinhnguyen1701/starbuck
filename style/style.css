@@ -1,5 +1,5 @@
 :root{
-    --colorFont: rgb(30,57,50);
+    --colorFont: #1e3932;
 }
 
 html{
@@ -17,7 +17,7 @@ body{
 /* typography */
 body{
     font-family: 'Sofia Sans', Arial, Helvetica, sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: var(--colorFont);
 }
 
@@ -26,12 +26,12 @@ h2{
     margin-bottom: 0;
 }
 
-a{
+/* a{
     color: var(--colorFont);
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: bold;
-}
+} */
 
 /* button */
 .btn{
@@ -40,28 +40,34 @@ a{
     border-radius: 30px;
 }
 
-/* messageGroup */
-.messageGroup{
+/* message */
+.message,
+.heading{
     text-align: center;
-    box-sizing: border-box;
-    padding-top: 20px;
-    padding-bottom: 35px;
-    width: 100%;
 }
 
-.heading{
-    font-size: 1.9rem;
+.frameOne .heading{
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .message{
-    margin: 35px 0;
+    color: var(--colorFont);
+    margin-top: 35px;
 }
 
-/* frame1 */
-.frame-one{
-    background-color: #f4c5a1;
+.message a{
+    color: var(--colorFont);
 }
 
-.frame__img{
-    width: 100%;
+/* registeredSign */
+.registeredSign{
+    font-size: 1.5rem;
+    font-weight: 300;
+    vertical-align: 1.27px;
+}
+
+.frameOne{
+    background-color: #d4e9e2;
+    padding: 15px 9px;
 }
