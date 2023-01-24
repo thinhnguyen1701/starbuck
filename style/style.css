@@ -1,73 +1,59 @@
 :root{
-    --colorFont: #1e3932;
+    --primaryColorFont: #1e3932;
+    --secondaryColorFont: rgba(0, 0, 0, 0.87);
+    --borderRadius: 30px;
 }
 
 html{
     font-size: 62.5%;
 }
 
-body{
-    margin: 0;
-}
-
-*, ::after, ::before{
-    box-sizing: border-box;
-}
-
 /* typography */
 body{
     font-family: 'Sofia Sans', Arial, Helvetica, sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.728rem;
     color: var(--colorFont);
 }
 
 h2{
-    font-size: 3rem;
-    margin-bottom: 0;
+    font-size: 2.074rem;
 }
 
-/* a{
-    color: var(--colorFont);
-    text-decoration: none;
-    font-size: 1.6rem;
-    font-weight: bold;
-} */
-
-/* button */
-.btn{
-    border: 1px solid var(--colorFont);
-    padding: 5px 15px;
-    border-radius: 30px;
-}
-
-/* message */
-.message,
-.heading{
+h2, p{
     text-align: center;
+    margin: 0;
 }
 
-.frameOne .heading{
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.message{
-    color: var(--colorFont);
+p{
     margin-top: 35px;
 }
 
-.message a{
-    color: var(--colorFont);
-}
-
-/* registeredSign */
 .registeredSign{
-    font-size: 1.5rem;
-    font-weight: 300;
-    vertical-align: 1.27px;
+    font-size: 1.44rem;
 }
 
+/* frame */
+.frame{
+    padding: 20px 10px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* button */
+.btn{
+    padding: 6px 15px;
+    color: var(--primaryColorFont);
+    border: 1px solid var(--primaryColorFont);
+    border-radius: var(--borderRadius);
+}
+
+.btn-link{
+    color: var(--primaryColorFont);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/* frameOne */
 .frameOne{
     background-color: #d4e9e2;
-    padding: 15px 9px;
 }
