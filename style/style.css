@@ -1,110 +1,220 @@
-:root{
+:root {
     --primaryColorFont: #1e3932;
     --secondaryColorFont: rgba(0, 0, 0, 0.87);
     --borderRadius: 30px;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
 /* typography */
-body{
+body {
     font-family: 'Sofia Sans', Arial, Helvetica, sans-serif;
     font-size: 1.728rem;
     color: var(--primaryColorFont);
 }
 
-h2{
-    font-size: 2.074rem;
+h2 {
+    font-size: 1.874rem;
     font-weight: 600;
 }
 
-h2, p{
+h2,
+p {
     text-align: center;
-    margin: 0;
+    word-spacing: 2px;
 }
 
-p{
-    margin-top: 35px;
-}    
+a {
+    color: var(--primaryColorFont);
+}
 
-.registeredSign{
+/* registered sign */
+.registeredSign {
     font-size: 1.44rem;
     font-weight: 300;
 }
 
-a{
-    color: var(--primaryColorFont);
+@media screen and (min-width: 375px) {
+    .registeredSign {
+        font-size: 1.74rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .registeredSign {
+        font-size: 2.35rem;
+    }
 }
 
 /* frame */
-.frame{
-    padding: 20px 15px;
+.frame {
     line-height: 1.7;
-    margin-bottom: 40px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/* heading */
+.headingSmall,
+.headingLarge {
+    margin-top: 25px;
+    margin-bottom: 0;
+    letter-spacing: 1.8px;
+    font-weight: 700;
+}
+
+.headingLarge {
+    font-size: 2.774rem;
+}
+
+@media screen and (min-width: 375px) {
+    .headingSmall {
+        font-size: 2.221rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .headingSmall{
+        font-size: 2.121rem;
+    }
+    
+    .headingLarge {
+        font-size: 2.9rem;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .headingSmall {
+        font-size: 3.421rem;
+    }
+
+    .headingLarge{
+        font-size: 5.523rem;
+        letter-spacing: 5px;
+    }
 }
 
 /* button */
-.btn{
-    padding: 6px 15px;
+.btn {
+    padding: 2px 20px;
     color: var(--primaryColorFont);
     border: 1px solid var(--primaryColorFont);
     border-radius: var(--borderRadius);
+    /* max-width: 77px; */
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.btn-link{
+.btn-link {
     color: var(--primaryColorFont);
     text-decoration: none;
     font-weight: 400;
 }
 
-/* container */
-.container{
-    width: 100%;
+/* message */
+.message {
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
-/* frameOne */
-.frameOne{
-    background-color: #d4e9e2;
+.messageLarge {
+    font-size: 2.0rem;
+    max-width: 570px;
 }
 
-@media screen and (min-width: 375px){
-    .headingSmall{
-        font-size: 2.421rem;
-    }
-
-    p{
+@media screen and (min-width: 375px) {
+    .message {
         font-size: 1.928rem;
     }
 
-    .registeredSign{
-        font-size: 1.74rem;
+    .messageLarge {
+        font-size: 2.141rem;
     }
 }
 
-@media screen and (min-width: 768px){
-    .container{
+@media screen and (min-width: 768px) {
+    .messageLarge {
+        margin-top: 0;
+        font-size: 2.445rem;
+        width: 39.55vw;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .message {
+        font-size: 2.523rem;
+    }
+
+    .messageLarge{
+        font-size: 2.8rem;
+        margin-bottom: 40px;
+    }
+}
+
+/* container */
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
         width: 55%;
     }
 }
 
 @media screen and (min-width: 1024px){
-    .container{
+    .container {
         width: 60%;
     }
+}
 
-    .headingSmall{
-        font-size: 3.421rem;
+/* image */
+.img {
+    width: 100%;
+    max-width: 750px;
+    max-height: 660px;
+}
+
+@media screen and (min-width: 768px){
+    .img {
+        height: 46vw;
+        width: 52vw;
     }
+}
 
-    p{
-        font-size: 2.523rem;
-    }
+/* frameOne */
+.frameOne {
+    background-color: #d4e9e2;
+}
 
-    .registeredSign{
-        font-size: 2.35rem;
+.frameOne .message {
+    margin-bottom: 0;
+}
+
+/* frameTwo */
+.frameTwo {
+    background-color: #96b2e1;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .frameTwo {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        /* padding: 20px 0 20px 40px; */
     }
 }
