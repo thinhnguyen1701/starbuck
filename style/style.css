@@ -142,6 +142,16 @@ a {
     color: var(--secondaryColorFont);
 }
 
+.readMoreLink{
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.readMoreLink:hover{
+    text-decoration: underline;
+}
+
 /* message */
 .message {
     margin-top: 15px;
