@@ -285,6 +285,10 @@ a {
     color: var(--listColorFont);
 }
 
+.list--inline{
+    display: inline-flex;
+}
+
 .listItem{
     /* margin-bottom: 0px; */
     display: flex;
