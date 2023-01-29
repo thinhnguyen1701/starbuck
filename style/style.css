@@ -12,18 +12,18 @@ html {
 /* typography */
 body {
     font-family: 'Sofia Sans', Arial, Helvetica, sans-serif;
-    font-size: 1.728rem;
+    font-size: 1.125rem;
     color: var(--primaryColorFont);
 }
 
 h2 {
-    font-size: 1.874rem;
+    font-size: 1.602rem;
     font-weight: 600;
 }
 
 h3{
     display: inline-block;
-    font-size: 1.75rem;
+    font-size: 1.424rem;
     font-weight: 400;
     margin: 0;
 }
@@ -56,34 +56,6 @@ a {
     }
 }
 
-/* chevron icon */
-.chevron::before {
-	/* transform: rotate(-45deg); */
-	border-style: solid;
-	border-width: 0.13em 0.13em 0 0;
-	content: '';
-	display: inline-block;
-	height: 0.45em;
-	/* left: 0.15em; */
-	position: relative;
-	transform: rotate(135deg);
-	vertical-align: top;
-	width: 0.45em;
-    font-size: 2.2rem;
-    top: 0;
-    /* margin-right: 20px; */
-}
-
-.chevronContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    background-color: #e9e9e9;
-    width: 50px;
-    height: 50px;
-}
-
 /* heading */
 .headingSmall,
 .headingLarge {
@@ -94,35 +66,59 @@ a {
 }
 
 .headingLarge {
-    font-size: 2.774rem;
+    font-size: 1.802rem;
 }
 
 @media screen and (min-width: 375px) {
     .headingSmall {
-        font-size: 2.221rem;
+        font-size: 2.074rem;
+    }
+
+    .headingLarge{
+        font-size: 2.488rem;
+    }
+
+    h3{
+        font-size: 1.728rem;
     }
 }
 
 @media screen and (min-width: 768px){
-    .headingSmall{
-        font-size: 2.121rem;
-    }
-    
     .headingLarge {
-        font-size: 2.9rem;
+        font-size: 3.052rem;
         margin-top: 0;
         margin-bottom: 15px;
+    }
+
+    .headingSmall{
+        font-size: 2.441rem;
+    }
+
+    h3{
+        font-size: 1.953rem;
+    }
+
+    a{
+        font-size: 1.3rem;
     }
 }
 
 @media screen and (min-width: 1024px){
-    .headingSmall {
-        font-size: 3.421rem;
+    .headingLarge{
+        font-size: 4.209rem;
+        letter-spacing: 5px;
     }
 
-    .headingLarge{
-        font-size: 5.523rem;
-        letter-spacing: 5px;
+    .headingSmall {
+        font-size: 3.157rem;
+    }
+
+    h3{
+        font-size: 2.369rem;
+    }
+
+    a{
+        font-size: 2.2rem;
     }
 }
 
@@ -160,35 +156,39 @@ a {
 }
 
 .messageLarge {
-    font-size: 2.0rem;
+    font-size: 1.266rem;
     max-width: 570px;
 }
 
 @media screen and (min-width: 375px) {
     .message {
-        font-size: 1.928rem;
+        font-size: 1.2rem;
     }
 
     .messageLarge {
-        font-size: 2.141rem;
+        font-size: 1.44remrem;
     }
 }
 
 @media screen and (min-width: 768px) {
+    .message{
+        font-size: 1.489rem;
+    }
+
     .messageLarge {
         margin-top: 0;
-        font-size: 2.445rem;
+        font-size: 1.953rem;
         width: 39.55vw;
     }
 }
 
 @media screen and (min-width: 1024px){
     .message {
-        font-size: 2.523rem;
+        font-size: 2.2rem;
     }
 
     .messageLarge{
-        font-size: 2.8rem;
+        font-size: 2.589rem;
         margin-bottom: 40px;
     }
 }
@@ -238,8 +238,10 @@ a {
 
 /* icons */
 .icon{
-    width: 35px;
-    height: 35px;
+    width: 7.8125vw;
+    height: 7.8125vw;
+    max-width: 35px;
+    max-height: 35px;
 }
 
 .iconContainer{
@@ -247,10 +249,12 @@ a {
     background-color: #fff;
     border-radius: 100%;
     display: flex;
-    height: 50px;
+    height: 9.375vw;
     justify-content: center;
     transition: background-color 0.3s ease-out;
-    width: 50px;
+    width: 9.375vw;
+    max-height: 50px;
+    max-width: 50px;
 }
 
 .iconContainer:hover{
@@ -287,6 +291,7 @@ a {
     line-height: 1.7;
     margin-bottom: 40px;
     margin: 0 auto;
+    margin-bottom: 30px;
     max-width: 1440px;
 }
 
@@ -345,7 +350,7 @@ a {
 }
 
 .list--inline{
-    margin-left: 15px;
+    /* margin-left: 15px; */
 }
 
 .socialMediaList .socialMediaList__item{
@@ -376,10 +381,6 @@ a {
 @media screen and (min-width: 768px){
     .list__item .container{
         width: 95%;
-    }
-
-    h3{
-        font-size: 2.0rem;
     }
 
     .chevron::before{
@@ -512,8 +513,14 @@ a {
         font-size: 1.7rem;
     }
 
+    .footer a{
+        font-size: 1.5rem;
+    }
+
     .copyright{
         font-size: 1.3rem;
         margin-left: 10px;
     }
 }
+
+/* nav */
